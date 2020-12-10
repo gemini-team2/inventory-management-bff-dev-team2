@@ -68,7 +68,7 @@ spec:
             - name: LOG_LEVEL
               value: {{ .Values.logLevel | quote }}
             - name: SERVICE_URL
-              value: {{ printf "inventory-backend-project-team2.apps.cooper.coc-ibm.com:80" .Values.connectsTo | quote }}
+              value: {{ printf "%s:80" .Values.connectsTo | quote }}
           envFrom:
             - configMapRef:
                 name: {{ default "jaeger-config" .Values.jaegerConfigName }}
