@@ -45,6 +45,6 @@ vcsInfo:
 
 partOf: ""
 
-connectsTo: "inventory-management-svc-team2"
+connectsTo: "inventory-backend"
 
 runtime: nodejs
