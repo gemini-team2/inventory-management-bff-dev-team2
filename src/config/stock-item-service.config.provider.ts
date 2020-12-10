@@ -1,6 +1,6 @@
 import {ObjectFactory} from 'typescript-ioc';
 
-const baseUrl: string = process.env.SERVICE_URL || 'localhost:9080';
+const baseUrl: string = 'inventory-backend-project-team2.apps.cooper.coc-ibm.com' || 'localhost:9080';
 
 export const stockItemConfigFactory: ObjectFactory = () => ({
   baseUrl,
